@@ -1,13 +1,8 @@
-// SLIDES AUTOMÁTICOS
+let slides = document.querySelectorAll(".slide");
 let index = 0;
-const slides = document.querySelectorAll(".slide");
 
-function showSlide() {
+setInterval(() => {
   slides.forEach(s => s.classList.remove("active"));
+  index = (index + 1) % slides.length;
   slides[index].classList.add("active");
-
-  index++;
-  if (index >= slides.length) index = 0;
-}
-
-setInterval(showSlide, 3000);
+}, 3000);
