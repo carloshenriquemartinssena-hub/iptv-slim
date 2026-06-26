@@ -94,6 +94,7 @@ body {
 .price-card {
   background: #222;
   border: 3px solid red;
+  border-radius: 10px;
   padding: 30px;
   max-width: 500px;
   margin: auto;
@@ -104,6 +105,10 @@ body {
   font-size: 28px;
   color: red;
 }
+
+button { 
+padding: 15px;
+border-radius: 10px;}
 
 /* REVIEWS */
 .review {
